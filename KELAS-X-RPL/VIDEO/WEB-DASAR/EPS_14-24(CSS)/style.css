@@ -1,0 +1,58 @@
+.border {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.wadah {
+  width: 1200px;
+  margin: auto;
+}
+
+h2:hover{
+  background-color: red;
+}
+
+.card:target{
+  background-color: yellow;
+}
+
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+.display{
+  display: inline-block;
+  padding: 3%;
+}
+
+.warna {
+  background: #2A7B9B;
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(19, 214, 55, 1) 62%, rgba(237, 221, 83, 1) 100%);
+  color: white;
+}
+
+.card {
+  width: 30%;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100px;
+}
+
+.horizontal {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.rata {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body
+}
