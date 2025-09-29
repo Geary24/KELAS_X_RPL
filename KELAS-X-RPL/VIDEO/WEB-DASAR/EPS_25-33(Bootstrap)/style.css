@@ -1,0 +1,58 @@
+.lebar {
+    width: 30%;
+}
+
+.kotak {
+    background-color: red;
+    height: 10vh;
+    color: white;
+}
+
+.card img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item img {
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+body::after {
+    content: "XS";
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+@media (min-width: 576px) {
+    body::after {
+        content: "SM";
+    }
+}
+
+@media (min-width: 768px) {
+    body::after {
+        content: "MD";
+    }
+}
+
+@media (min-width: 992px) {
+    body::after {
+        content: "LG";
+    }
+}
+
+@media (min-width: 1200px) {
+    body::after {
+        content: "XL";
+    }
+}
+
+@media (min-width: 1400px) {
+    body::after {
+        content: "XXL";
+    }
+}
