@@ -1,11 +1,11 @@
 <!-- belajar php -->
 <h1>saya belajar php</h1>
 <?php
-    $nama = "nama:r.muhammad.daiyan.althaf";
+    $nama = "Geary Eramus E";
     $kelas = "X-RPL";
-    $umur = "12";
-    $alamat = "jambangan";
-    $hobi = "bola dan badminton";
+    $umur = "16";
+    $alamat = "candi";
+    $hobi = "Bermain Basket dan Main Game";
     $enter = "<br>";
 
 echo $nama;
@@ -16,11 +16,11 @@ echo $kelas;
 echo'saya kelas';
 echo'12';
 echo'<br>';
-echo'nama:r.muhammad.daiyan.althaf <br>';
+echo'nama:Geary Eramus E <br>';
 echo'kelas:X-RPL <br>';
-echo'alamat:jambangan <br>';
-echo'hobi:bola dan badminton <br>';
-echo'umur:15 <br>';
+echo'alamat:Candi <br>';
+echo'hobi:Bermain Basket dan Main Game <br>';
+echo'umur:16 <br>';
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +28,7 @@ echo'umur:15 <br>';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web daiyan</title>
+    <title>web Geary</title>
 </head>
 <body>
     <div>
