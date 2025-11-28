@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigasi -->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Img/SwitchLogo.png" alt="Bootstrap" width="180">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produk">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#promo">Promo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Isi Carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Img/pokemon violet.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Pokemon violet</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quis.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Img/Zelda.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Zelda</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quis.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Img/SSBU.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Super Smash Bros</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quis.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tombol Carousel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron p-5 mb-4 bg-body-tertiary rounded-3">
+        <div class="container-fluid text-center">
+            <h1 class="display-4">Promo murah!</h1>
+
+            <p class="lead">
+                This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
+                content or information.
+            </p>
+
+            <hr class="my-4">
+
+            <p class="fs-4">
+                It uses a utility classes for typography and spacing to space content out within the larger container.
+            </p>
+
+            <button class="btn btn-outline-primary btn-lg" type="button">Beli Sekarang!
+            </button>
+        </div>
+    </div>
+
+    <!-- Card -->
+    <div class="container">
+        <div class="row" id="produk">
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="card border-0">
+                    <img src="Img/pokemon violet.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pokemon violet</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <h5>Rp 599.000,-</h5>
+                        <a href="#" class="btn btn-primary">Beli</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="card border-0">
+                    <img src="Img/Zelda.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Zelda</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <h5>Rp 499.000,-</h5>
+                        <a href="#" class="btn btn-primary">Beli</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="card border-0">
+                    <img src="Img/SSBU.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Super Smash Bros</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <h5>Rp 399.000,-</h5>
+                        <a href="#" class="btn btn-primary">Beli</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kolom dan Tabel -->
+    <div class="container" id="promo">
+        <div class="row text-center bg-info text-white">
+            <div class="col">
+                <h1>Diskon!</h1>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-lg-4">
+                <img src="Img/switch.jpg" width="350px">
+            </div>
+            <div class="col-lg-8">
+                <table class="table mt-3 table-borderless">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nintendo Switch</th>
+                            <th scope="col">Diskon</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Switch Lite</td>
+                            <td>22%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Switch Oled</td>
+                            <td>13%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Switch 2</td>
+                            <td>7%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5 mb-4 bg-light rounded-3 bg-black text-white" id="tentang">
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <p>SMKN 2 Buduran Sidoarjo<br>
+                        <strong>Sidoarjo, Jawa Timur</strong><br>
+                        Indonesia<br>
+                        61555
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <p>
+                        <strong>Pembayaran</strong><br>
+                        BRI<br>1234-567-890<br>
+                        BCA<br>0987-654-321<br>
+                        Mandiri<br>0812-3456-7890<br>
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <p>
+                        <strong>Tentang Kami</strong><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nulla ipsum, itaque optio,
+                        dicta, consequuntur sed perspiciatis dolorem beatae possimus incidunt. Blanditiis repudiandae
+                        tenetur ab officia impedit officiis, aliquam vero consectetur, magni error optio hic voluptate
+                        suscipit voluptatibus ea. Corrupti deleniti officia optio natus omnis nisi placeat laudantium
+                        vitae molestias?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Form Kontak</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="exampleInputText1" class="form-label">Nama</label>
+                                        <input type="text" class="form-control" id="exampleInputText1"
+                                            aria-describedby="TextHelp">
+                                        <div id="TextHelp" class="form-text">Isi nama dan alamat anda!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="exampleInputAlamat1" class="form-label">Alamat</label>
+                                        <input type="text" class="form-control" id="exampleInputAlamat1">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleInputKota1" class="form-label">Kota</label>
+                                        <input type="text" class="form-control" id="exampleInputKota1">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label for="exampleInputKodePos1" class="form-label">KodePos</label>
+                                        <input type="text" class="form-control" id="exampleInputKodePos1">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Kirim</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
