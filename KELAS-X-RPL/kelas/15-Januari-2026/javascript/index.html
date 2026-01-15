@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+    <h1 id="Judul"></h1>
+    <p id="isi"></p>
+    <input type="number" id="bil1" value="">
+    <input type="number" id="bil2" value="">
+    <button onclick="hitung()">hitung</button>
+
+    <h1 id="zodiakanda">Zodiak Anda</h1>
+    <input type="number" id = "bulan" placeholder="bulan">
+    <input type="number" id = "tanggal" placeholder="tanggal">
+    <button onclick="zodiak()">Zodiak</button>
+    
+    <h1 id="nilaianda">Nilai Anda</h1>
+    <input type="number" id = "nilai" placeholder="masukan nilai">
+    <button onclick="nilai()">Nilai</button>
+
+<script>
+function hitung () {
+    let hasil = document.getElementById("Judul");
+    let bil1 = document.getElementById("bil1").value;
+    let bil2 = document.getElementById("bil2").value;
+
+    hasil.innerHTML = parseInt(bil1) + parseInt(bil2);
+}
+
+function zodiak() {
+    let bulan = parseInt(document.getElementById("bulan").value);
+    let tanggal = parseInt(document.getElementById("tanggal").value);
+    let zodiakanda = document.getElementById("zodiakanda");
+
+    if (bulan < 1 || bulan > 12) {
+        alert("bulan salah !");
+    } else if (tanggal < 1 || tanggal > 31) {
+        alert("tanggal salah !");
+    } else {
+
+        if (bulan == 1) {
+            if (tanggal <= 19) {
+                zodiakanda.innerHTML = "Capricorn";
+            } else {
+                zodiakanda.innerHTML = "Aquarius";
+            }
+
+        } else if (bulan == 2) {
+            if (tanggal <= 18) {
+                zodiakanda.innerHTML = "Aquarius";
+            } else {
+                zodiakanda.innerHTML = "Pisces";
+            }
+
+        } else if (bulan == 3) {
+            if (tanggal <= 20) {
+                zodiakanda.innerHTML = "Pisces";
+            } else {
+                zodiakanda.innerHTML = "Aries";
+            }
+
+        } else if (bulan == 4) {
+            if (tanggal <= 19) {
+                zodiakanda.innerHTML = "Aries";
+            } else {
+                zodiakanda.innerHTML = "Taurus";
+            }
+
+        } else if (bulan == 5) {
+            if (tanggal <= 20) {
+                zodiakanda.innerHTML = "Taurus";
+            } else {
+                zodiakanda.innerHTML = "Gemini";
+            }
+
+        } else if (bulan == 6) {
+            if (tanggal <= 20) {
+                zodiakanda.innerHTML = "Gemini";
+            } else {
+                zodiakanda.innerHTML = "Cancer";
+            }
+
+        } else if (bulan == 7) {
+            if (tanggal <= 22) {
+                zodiakanda.innerHTML = "Cancer";
+            } else {
+                zodiakanda.innerHTML = "Leo";
+            }
+
+        } else if (bulan == 8) {
+            if (tanggal <= 22) {
+                zodiakanda.innerHTML = "Leo";
+            } else {
+                zodiakanda.innerHTML = "Virgo";
+            }
+
+        } else if (bulan == 9) {
+            if (tanggal <= 22) {
+                zodiakanda.innerHTML = "Virgo";
+            } else {
+                zodiakanda.innerHTML = "Libra";
+            }
+
+        } else if (bulan == 10) {
+            if (tanggal <= 22) {
+                zodiakanda.innerHTML = "Libra";
+            } else {
+                zodiakanda.innerHTML = "Scorpio";
+            }
+
+        } else if (bulan == 11) {
+            if (tanggal <= 21) {
+                zodiakanda.innerHTML = "Scorpio";
+            } else {
+                zodiakanda.innerHTML = "Sagittarius";
+            }
+        } else if (bulan == 12) {
+            if (tanggal <= 21) {
+                zodiakanda.innerHTML = "Sagittarius";
+            } else {
+                zodiakanda.innerHTML = "Capricorn";
+            }
+        }
+
+    }
+}
+
+// BUAT KONFERSI NILAI JIKA 90-100 NILAI NYA A
+// 70 - 89 NILAINYA B KEMUDIAN 69-69 NILAI NYA C 
+// 50 - 59 NILAINYA D LEBIH KECIL DADRI 50 NILAINYAA E 
+
+function nilai() {
+    let angka = parseInt(document.getElementById("nilai").value);
+    let hasil = document.getElementById("hasil");
+
+    if (angka < 0 || angka > 100) {
+        alert("Nilai tidak valid!");
+    } else {
+        if (angka >= 90 && angka <= 100) {
+            hasil.innerHTML = "Nilai A";
+        } else if (angka >= 70 && angka <= 89) {
+            hasil.innerHTML = "Nilai B";
+        } else if (angka >= 60 && angka <= 69) {
+            hasil.innerHTML = "Nilai C";
+        } else if (angka >= 50 && angka <= 59) {
+            hasil.innerHTML = "Nilai D";
+        } else {
+            hasil.innerHTML = "Nilai E";
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>
