@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="pesan()">Pesan</button>
+    <script>
+      async function pesan() {
+        await new Promise((r) => setTimeout(r, 1000));
+        alert("Selesai");
+      }
+    </script>
+  </body>
+</html>
